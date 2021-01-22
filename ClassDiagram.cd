@@ -1,0 +1,74 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="AdvertisingSystem.Controllers.AdsController">
+    <Position X="6.5" Y="4.25" Width="2" />
+    <Members>
+      <Method Name="AdExists" Hidden="true" />
+      <Method Name="Delete" Hidden="true" />
+      <Method Name="DeleteConfirmed" Hidden="true" />
+      <Method Name="Details" Hidden="true" />
+      <Method Name="Edit" Hidden="true" />
+    </Members>
+    <TypeIdentifier>
+      <HashCode>AAACAAAAAAABBACAAAAAAAAAAAEAAEACAAEAAAAAAAA=</HashCode>
+      <FileName>Controllers\AdsController.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="AdvertisingSystem.Controllers.AdvertisersController">
+    <Position X="8.75" Y="4.25" Width="2.25" />
+    <Members>
+      <Method Name="AdvertiserExists" Hidden="true" />
+      <Method Name="Delete" Hidden="true" />
+      <Method Name="DeleteConfirmed" Hidden="true" />
+      <Method Name="Details" Hidden="true" />
+      <Method Name="Edit" Hidden="true" />
+    </Members>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAABBASAAAAAAAAAAAGAAEECAAEABgAAAAA=</HashCode>
+      <FileName>Controllers\AdvertisersController.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="AdvertisingSystem.Helper.APIHelper">
+    <Position X="4.75" Y="4.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Helper\APIHelper.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="AdvertisingSystem.Models.Ad">
+    <Position X="0.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAACAAAABgBAAEAAAAAAAAQAAAAgAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Models\Ad.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="AdvertisingSystem.Models.Advertiser">
+    <Position X="2.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAICAAAAAAAAAAAIECAAAARAAAgQAAABAAAAAAAAAAA=</HashCode>
+      <FileName>Models\Advertiser.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="AdvertisingSystem.Models.AdvertisingDBContext">
+    <Position X="7.5" Y="0.5" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAIAAgIAAAAQAAAAAAAAAAAAEAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Models\AdvertisingDBContext.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="AdvertisingSystem.Models.BillingAdress">
+    <Position X="4" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAACAAAAAABAgAAIAAAAAAAAAAgAAAABAAAAAAAAAAA=</HashCode>
+      <FileName>Models\BillingAdress.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="AdvertisingSystem.ViewModels.Subscriber">
+    <Position X="5.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAACAEAAAAAAAAAIAAAAAAAAAAgAAAABAAAAAAAAAAg=</HashCode>
+      <FileName>ViewModels\Subscriber.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

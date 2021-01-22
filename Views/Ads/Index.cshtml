@@ -1,0 +1,58 @@
+﻿@model IEnumerable<AdvertisingSystem.Models.Ad>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>Index</h1>
+
+<p>
+    @Html.ActionLink("Create Ad", "Create", "Advertisers")
+</p>
+
+<div class="card-columns">
+    @foreach (var item in Model)
+    {
+        @if (item.Advertiser.Subscriber != null)
+        {
+            <div class="card bg-success text-white">
+                <div class="card-header text-center">
+                    <h4>@Html.DisplayFor(modelItem => item.Title)</h4>
+                </div>
+                <div class="card-body text-center">
+                    <div class="card-subtitle">
+                        <h6>Price: @Html.DisplayFor(modelItem => item.ItemPrice) SEK</h6>
+                    </div>
+
+                    <p class="card-text">@Html.DisplayFor(modelItem => item.Content)</p>
+
+                    <div class="card-footer">
+                        <p class="card-text">SUBSCRIBER AD</p>
+                        <p class="card-text">Ad price: @Html.DisplayFor(modelItem => item.AdPrice) SEK</p>
+                    </div>
+                </div>
+            </div>
+        }
+        else
+        {
+            <div class="card bg-primary text-white">
+                <div class="card-header text-center">
+                    <h4>@Html.DisplayFor(modelItem => item.Title)</h4>
+                </div>
+                <div class="card-body text-center">
+                    <div class="card-subtitle">
+                        <h6>Price: @Html.DisplayFor(modelItem => item.ItemPrice) SEK</h6>
+                    </div>
+
+                    <p class="card-text">@Html.DisplayFor(modelItem => item.Content)</p>
+
+                    <div class="card-footer">
+                        <p class="card-text">COMPANY AD</p>
+                        <p class="card-text">Ad price: @Html.DisplayFor(modelItem => item.AdPrice) SEK</p>
+                    </div>
+                </div>
+            </div>
+        }
+    }
+</div>
+

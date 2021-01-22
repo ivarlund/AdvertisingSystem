@@ -1,0 +1,44 @@
+﻿@model AdvertisingSystem.Models.Advertiser
+
+@{
+    ViewData["Title"] = "Create";
+}
+
+<h1>Create new Ad</h1>
+
+<h4>Select your type</h4>
+<p>@ViewBag.NotFound</p>
+<div>
+    Company: @Html.RadioButton("Advertiser", "company", new { onclick = "showForm(this)" })
+    <br />
+    Subscriber: @Html.RadioButton("Advertiser", "subscriber", new { onclick = "showForm(this)" })
+</div>
+
+<div id="companyDiv" style="display: none">
+    @Html.Partial("_CompanyCreate")
+</div>
+
+<div id="subscriberDiv" style="display: none">
+    @Html.Partial("_SubscriberCreate")
+</div>
+
+<script type="text/javascript">
+    function showForm(radio) {
+        var selected = radio.value;
+        if (selected == "company") {
+            document.getElementById("subscriberDiv").style.display = "none";
+            document.getElementById("companyDiv").style.display = "initial";
+        }
+        else if (selected == "subscriber") {
+            document.getElementById("companyDiv").style.display = "none";
+            document.getElementById("subscriberDiv").style.display = "initial";
+        }
+    }
+</script>
+
+<div>
+    <a asp-action="Index">Back to List</a>
+</div>
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}
